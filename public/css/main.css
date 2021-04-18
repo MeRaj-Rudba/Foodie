@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+    --font-primary: "PT Sans", sans-serif;
+    --font-secondary: "Nunito", sans-serif;
+    --accent1: #8c4988;
+    --accent2: #d95f98;
+    --accent3: #f28da8;
+    --accent_dark: #4a3259;
+    --accent_light: #d8d9d0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--accent_light);
+}
+.logo {
+    height: 20vh;
+}
+.title {
+    color: var(--accent1);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 3em;
+}
+.main-container {
+    color: var(--accent_dark);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-text-left {
+    text-align: left;
+}
+.tag-line {
+  word-spacing: .25em;
+    font-size: 1.5em;
+    color: var(--accent2);
+    border-bottom: 1px solid var(--accent2);
+}
+.order-btn {
+    background: transparent;
+    color: var(--accent2);
+    border: 2px solid var(--accent2);
+    border-radius: 0.25em;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+}
+.order-btn:hover {
+    background: var(--accent2);
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    color: var(--accent_dark);
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+}
+.main-container form {
+    display: grid;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.form-inside {
+    display: grid;
+    width: 40vw;
+    padding-bottom: 1em;
+}
+.form-inside label {
+    font-family: var(--font-secondary);
+    font-size: 1.2em;
+}
+.form-inside input {
+    padding: 0.5em 1em;
+    font-family: var(--font-primary);
+    font-size: 1.2em;
+    border: 1px solid var(--accent1);
+    border-radius: 0.125em;
+    margin-bottom: 1em;
+}
+.form-inside input:focus {
+    outline: 2px solid var(--accent3);
+}
+.form-inside select {
+    padding: 0.5em 1em;
+    font-family: var(--font-primary);
+    font-size: 1.2em;
+    border: 1px solid var(--accent1);
+    border-radius: 0.125em;
+    margin-bottom: 1em;
+}
+.form-inside select:focus {
+    outline: 2px solid var(--accent3);
+}
+
+.form-inside fieldset {
+    font-family: var(--font-primary);
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.checkbox-item {
+    margin-left: 1em;
+}
+
+.order-list {
+    display: grid;
+}
+.order-item {
+    display: flex;
+    width: 35vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 0.25em;
+    margin: 1em;
+}
+.order-item img {
+    height: 5em;
+}
+
+.order-list a {
+  margin-left: 1em;
+    font-size: 0.8em;
+    color: var(--accent3);
+    
+}
+.order-list a:hover {
+    text-decoration: none;
+    color: var(--accent1);
+}
+.order-details{
+  display: grid;
+  min-width: 35vw;
+  padding: 2em;
+  justify-content: center;
+  font-size: 1.2em;
+}
+.pizza-details{
+  
+}
+.order-back{
+  padding: 5rem;
+}
+
